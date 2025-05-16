@@ -32,11 +32,6 @@ const dev_db_url =
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
 
 
-await mongoose.connect(mongoDB, {
-  serverSelectionTimeoutMS: 20000, // ⬅️ 20 secondi invece di 10
-  socketTimeoutMS: 30000,          // ⬅️ tempo massimo per operazioni
-});
-
 main().catch((err) => console.log(err));
 async function main() {
   await mongoose.connect(mongoDB);
