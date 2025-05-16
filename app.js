@@ -28,7 +28,7 @@ mongoose.set("strictQuery", false);
 
 const dev_db_url =
 
-"mongodb+srv://cooluser:coolpassword@cluster0.u0jkl.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0";
+"mongodb+srv://cristianopizzolini:Kripiz2024@cluster0.uzbmv5z.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0";
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
 
 
